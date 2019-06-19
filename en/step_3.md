@@ -1,7 +1,5 @@
 ## Plotting the points
 
-You should now have a list of coordinates.
-
 You can plot your coordinates with `ListPlot`.
 
 --- task ---
@@ -11,6 +9,7 @@ Plot your coordinates.
 ```
 ListPlot[<coordinates>]
 ```
+TODO: Add plot of points.
 
 --- /task ---
 
@@ -24,6 +23,8 @@ Join up the coordinates in your plot with the `Joined` option.
 ```
 ListPlot[<coordinates>, Joined -> True]
 ```
+
+TODO: Add plot of joined points.
 
 --- /task ---
 

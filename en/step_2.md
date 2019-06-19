@@ -20,7 +20,8 @@ A raster graphic (also known as a bitmap image) is made up of a grid of fixed pi
 A vector graphic is made up of polygons defined by mathematical curves connecting points. If you zoom in on a vector graphic, it will retain its detail.
 
 ![Raster graphic VS vector graphic](images/RasterVSVector.png)
-Credit to Darth Stabro, English Wikipedia (https://commons.wikimedia.org/w/index.php?curid=15789788)
+TODO: Credit to Darth Stabro, English Wikipedia (https://commons.wikimedia.org/w/index.php?curid=15789788)
+TODO: Need to reduce the image size. This applies to many other images in other projects, too.
 
 --- /collapse ---
 
@@ -37,16 +38,10 @@ Here is an image you can use:
 
 --- task ---
 
-Give your image a name, such as `myImage`, and evaluate it.
+Give your image a name, such as `myImage`. Follow it with a semicolon (`;`) to hide the output and evaluate it.
 
 ```
 myImage = <your image>
-```
-
-Add a semicolon (`;`) after the image (and reevaluate) to hide the output.
-
-```
-myImage = <your image>;
 ```
 
 --- /task ---
@@ -74,6 +69,7 @@ You will need to specify a number of colours (2 to 5 is recommended) and an imag
 
 ```
 ImageGraphics[myImage, <colour number>, ImageSize -> <size number>]
+```
 
 --- /task ---
 
@@ -158,6 +154,7 @@ Use `Part` to extract the points from your vector graphic.
 ```
 Part[<vector graphic>, <sub-list number>, <item number>]
 ```
+TODO: Add image of coordinate list.
 
 --- hint ---
 
@@ -166,3 +163,5 @@ You need `Part[<vector graphic>, 1, 1]`.
 --- /hint ---
 
 --- /task ---
+
+You should now have a list of coordinates.
