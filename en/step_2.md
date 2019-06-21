@@ -2,7 +2,7 @@
 
 --- task ---
 
-If you have never used the Wolfram Language before, follow [this guide to get started]() and learn to use the tool. Look at the sections **Starting Mathematica** and **Programming in Mathematica**.
+If you have never used the Wolfram Language before, follow [this guide to get started](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica) and learn to use the tool. Look at the sections **Starting Mathematica** and **Programming in Mathematica**.
 
 --- /task ---
 
@@ -20,7 +20,7 @@ A raster graphic (also known as a bitmap image) is made up of a grid of fixed pi
 A vector graphic is made up of polygons defined by mathematical curves connecting points. If you zoom in on a vector graphic, it will retain its detail.
 
 ![Raster graphic VS vector graphic](images/RasterVSVector.png)
-TODO: Credit to Darth Stabro, English Wikipedia (https://commons.wikimedia.org/w/index.php?curid=15789788)
+Credit to [Darth Stabro, English Wikipedia](https://commons.wikimedia.org/w/index.php?curid=15789788).
 TODO: Need to reduce the image size. This applies to many other images in other projects, too.
 
 --- /collapse ---
@@ -41,7 +41,7 @@ Here is an image you can use:
 Give your image a name, such as `myImage`. Follow it with a semicolon (`;`) to hide the output and evaluate it.
 
 ```
-myImage = <your image>
+myImage = <your image>;
 ```
 
 --- /task ---
@@ -52,10 +52,10 @@ You are now going to reduce the size of your image. This will make later steps q
 
 --- task ---
 
-Use `Rasterize` to reduce your image to being about 200 pixels across.
+Use `Rasterize` to reduce your image to being about 200 or 300 pixels across.
 
 ```
-Rasterize[myImage, RasterSize -> 200];
+Rasterize[myImage, RasterSize -> <number>];
 ```
 
 --- /task ---

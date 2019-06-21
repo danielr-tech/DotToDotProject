@@ -1,12 +1,125 @@
-![assign image to variable i](images/iequals2.png)
+## Extracting points from an image
+
+Find and name an image:
+
+![A cartoon temple](images/myImageTemple.png)
+
+Resize the image:
+
 ```
-faceImages = FindFaces[i, "Image"];
+myImage = Rasterize[myImage, RasterSize -> 250];
+```
 
-facePositions = FindFaces[i, "Position"];
+Convert to a vector graphic:
 
-newFace1 = ImageEffect[ImageReflect[ImageResize[faceImages[[1]], ImageDimensions[faceImages[[2]]]], Left], {"FadedFrame", Scaled[1/4]}];
+```
+ImageGraphics[myImage, 2, ImageSize -> 300]
+```
 
-newFace2 = ImageEffect[ImageReflect[ImageResize[faceImages[[2]], ImageDimensions[faceImages[[1]]]], Left], {"FadedFrame", Scaled[1/4]}];
+Extract and name the points:
 
-ImageCompose[i, {newFace1, newFace2}, {facePositions[[2]], facePositions[[1]]}]
-  ```
+```
+points = Part[ImageGraphics[myImage, 2, ImageSize -> 300], 1, 1]
+```
+
+
+## Plotting the points
+
+Plot the points:
+
+```
+ListPlot[
+    points,
+    AspectRatio -> 1,
+    Axes -> False,
+    Joined -> joined
+]
+```
+
+![First dot to dot](images/TemplePlot.png)
+
+
+## Adding labels
+
+Plot the points with labels:
+
+```
+ListPlot[
+    Table[
+        Callout[
+            Part[points, position],
+            position
+        ],
+        {position, 1, Length[points], 1}
+    ],
+    AspectRatio -> 1,
+    Axes -> False,
+    Joined -> joined
+]
+```
+
+
+## Creating a function
+
+Create a function that takes an image and creates a dot-to-dot, allowing the user to choose whether or not to show the solution.
+
+```
+dotToDot[image_, solution_] := 
+With[
+    {
+        points = Part[ImageGraphics[image, 2, ImageSize -> 300], 1, 1]
+    },
+    ListPlot[
+        Table[
+            Callout[
+                Part[points, position],
+                position
+            ],
+            {position, 1, Length[points], 1}
+        ],
+        Joined -> solution,
+        AspectRatio -> 1,
+        Axes -> False
+    ]
+]
+```
+
+
+## Challenges
+
+The starting image can be simplified with `Blur`, `Rasterize` or `Binarize`.
+
+
+`Part[points, 1]` can be used to find the first point.
+This point can be added to end of the list with `Join[points, {Part[points, 1]}]`.
+This will join the last point in the plot to the first.
+
+
+All of the labels can be made visible using `LabelVisibility -> All` in `Callout`.
+
+
+`ArrayResample[points, <number>]` can be used to create a shorter list of points.
+The number used should be smaller than `Length[points]`.
+
+
+The points can be replaced, added or dropped in a variety of ways.
+Here, we use `Part`, `ReplacePart`, `Insert`, `Join` and `Drop`.
+For simplicity, each instance of `Part[expression, part]` has been replaced with the shorthand version, `expression[[part]]`:
+
+```
+points = ReplacePart[points, 125 -> points[[114]]]; (* replace point 125 *)
+points = ReplacePart[points, {114, 1} -> points[[1, 1]]]; (* replace the first part of point 114 *)
+
+points = Insert[points, points[[1]], 114]; (* add point at position 114 *)
+points = Insert[points, {points[[167, 1]], points[[178, 2]]}, 177]; (* add point at position 177 *)
+points = Insert[points, points[[178]], 182]; (* add point at position 182 *)
+points = Insert[points, {points[[2, 1]], points[[178, 2]]}, 183]; (* add point at position 183 *)
+points = Join[points, {points[[13]]}]; (* add point to end of the list *)
+
+points = Drop[points, {67, 110}]; (* drop points 67 to 110 *)
+points = Drop[points, {16, 62}]; (* drop points 16 to 62 *)
+```
+
+Plot the points to verify it has worked:
+
+![Cleaned up dot to dot](images/CleanedTemplePlot.png)

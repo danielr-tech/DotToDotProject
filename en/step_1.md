@@ -1,4 +1,4 @@
-## Dot to dot
+## Introduction
 
 In this project, you will use the Wolfram Language to create a dot-to-dot from an image.
 
