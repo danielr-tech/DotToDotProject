@@ -2,7 +2,7 @@
 
 Find and name an image:
 
-![A cartoon temple](images/myImageTemple.png)
+![A cartoon temple](../images/myImageTemple.png)
 
 Resize the image:
 
@@ -36,7 +36,7 @@ ListPlot[
 ]
 ```
 
-![First dot to dot](images/TemplePlot.png)
+![First dot to dot](../images/TemplePlot.png)
 
 
 ## Adding labels
@@ -125,4 +125,4 @@ points = Drop[points, {16, 62}];
 
 Plot the points to verify it has worked:
 
-![Cleaned up dot to dot](images/CleanedTemplePlot.png)
+![Cleaned up dot to dot](../images/CleanedTemplePlot.png)
