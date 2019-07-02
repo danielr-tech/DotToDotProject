@@ -107,17 +107,20 @@ Here, we use `Part`, `ReplacePart`, `Insert`, `Join` and `Drop`.
 For simplicity, each instance of `Part[expression, part]` has been replaced with the shorthand version, `expression[[part]]`:
 
 ```
-points = ReplacePart[points, 125 -> points[[114]]]; (* replace point 125 *)
-points = ReplacePart[points, {114, 1} -> points[[1, 1]]]; (* replace the first part of point 114 *)
+(* Replace points: *)
+points = ReplacePart[points, 125 -> points[[114]]];
+points = ReplacePart[points, {114, 1} -> points[[1, 1]]];
 
-points = Insert[points, points[[1]], 114]; (* add point at position 114 *)
-points = Insert[points, {points[[167, 1]], points[[178, 2]]}, 177]; (* add point at position 177 *)
-points = Insert[points, points[[178]], 182]; (* add point at position 182 *)
-points = Insert[points, {points[[2, 1]], points[[178, 2]]}, 183]; (* add point at position 183 *)
-points = Join[points, {points[[13]]}]; (* add point to end of the list *)
+(* Add points: *)
+points = Insert[points, points[[1]], 114];
+points = Insert[points, {points[[167, 1]], points[[178, 2]]}, 177];
+points = Insert[points, points[[178]], 182];
+points = Insert[points, {points[[2, 1]], points[[178, 2]]}, 183];
+points = Join[points, {points[[13]]}];
 
-points = Drop[points, {67, 110}]; (* drop points 67 to 110 *)
-points = Drop[points, {16, 62}]; (* drop points 16 to 62 *)
+(* Remove points: *)
+points = Drop[points, {67, 110}];
+points = Drop[points, {16, 62}];
 ```
 
 Plot the points to verify it has worked:
