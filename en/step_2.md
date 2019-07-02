@@ -154,13 +154,17 @@ Use `Part` to extract the points from your vector graphic.
 ```
 Part[<vector graphic>, <sub-list number>, <item number>]
 ```
-TODO: Add image of coordinate list.
+![List of points](images/Coordinates.png)
+
+--- hints ---
 
 --- hint ---
 
 You need `Part[<vector graphic>, 1, 1]`.
 
 --- /hint ---
+
+--- /hints ---
 
 --- /task ---
 
