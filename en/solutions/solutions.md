@@ -2,7 +2,7 @@
 
 Find and name an image:
 
-![A cartoon temple](../images/myImageTemple.png)
+![A cartoon temple, named](../images/myImageTemple.png)
 
 Resize the image:
 
