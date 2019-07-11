@@ -30,9 +30,11 @@ TODO: Need to reduce the image size. This applies to many other images in other 
 Find an image and drag it into your notebook.
 Your image should be fairly simple (just one or two block colours).
 
-Here is an image you can use:
+Alternatively, evaluate the following code to get an example image.
 
-![A cartoon temple](images/Temple.png)
+```
+CloudGet["https://www.wolframcloud.com/obj/RasPi/Temple"]
+```
 
 --- /task ---
 
