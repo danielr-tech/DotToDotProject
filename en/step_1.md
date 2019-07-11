@@ -45,11 +45,4 @@ If you need to print this project, please use the [printer-friendly version](htt
 
 --- /collapse ---
 
-
-
-
-
-
-
-
-
+![Gif test](images/GifTest.gif)
