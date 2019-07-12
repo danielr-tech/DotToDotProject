@@ -49,3 +49,5 @@ Warning: this is a manual process!
 --- /hint ---
 
 --- /hints ---
+
+![Simplifying the temple dot-to-dot](images/TempleGif.gif)

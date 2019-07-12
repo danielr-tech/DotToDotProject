@@ -7,7 +7,7 @@ You can plot your coordinates with `ListPlot`.
 Plot your coordinates.
 
 ```
-ListPlot[<coordinates>]
+ListPlot[points]
 ```
 TODO: Add plot of points.
 

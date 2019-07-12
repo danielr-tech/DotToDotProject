@@ -137,7 +137,7 @@ Part[{a, b, c, d, e}, {1, 4, 5}]
 
 ```
 
-Evaluate this to swap the first and fifth items in a list.
+Evaluate this to swap the first and fifth items in a 5-item list.
 
 ```
 Part[{a, b, c, d, e}, {5, 2, 3, 4, 1}]
@@ -154,9 +154,8 @@ The points you wish to extract are in the **first position** of the **first sub-
 Use `Part` to extract the points from your vector graphic.
 
 ```
-Part[<vector graphic>, <sub-list number>, <item number>]
+points = Part[<vector graphic>, <sub-list number>, <item number>]
 ```
-![List of points](images/Coordinates.png)
 
 --- hints ---
 
@@ -171,3 +170,5 @@ You need `Part[<vector graphic>, 1, 1]`.
 --- /task ---
 
 You should now have a list of coordinates.
+
+![List of points](images/Coordinates.png)
