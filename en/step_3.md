@@ -9,7 +9,8 @@ Plot your coordinates.
 ```
 ListPlot[points]
 ```
-TODO: Add plot of points.
+
+![Temple plot, dots](images/TemplePlotNotJoined.png)
 
 --- /task ---
 
@@ -21,11 +22,26 @@ Let's see what the solution looks like by joining all of the dots up.
 Join up the coordinates in your plot with the `Joined` option.
 
 ```
-ListPlot[<coordinates>, Joined -> True]
+ListPlot[points, Joined -> True]
 ```
 
-TODO: Add plot of joined points.
+![Temple plot, joined](images/TemplePlotJoined.png)
 
 --- /task ---
 
-It's not perfect, but its not bad either!
+Finally, let's neaten it up a bit.
+
+--- task ---
+
+Remove the axes and (if the dot-to-dot is looking distorted) correct the aspect ratio.
+
+```
+ListPlot[points, Joined -> True, Axes -> False, AspectRatio -> 1]
+```
+
+![Temple plot, no axes, and aspect ratio corrected](images/TemplePlotAxesAspectRatio.png)
+
+--- /task ---
+
+
+It's not perfect, but its probably not bad either!

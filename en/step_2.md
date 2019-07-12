@@ -151,7 +151,7 @@ The points you wish to extract are in the **first position** of the **first sub-
 
 --- task ---
 
-Use `Part` to extract the points from your vector graphic.
+Use `Part` to extract the points from your vector graphic. Call the result `points`.
 
 ```
 points = Part[<vector graphic>, <sub-list number>, <item number>]

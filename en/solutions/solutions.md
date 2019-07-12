@@ -36,8 +36,6 @@ ListPlot[
 ]
 ```
 
-![First dot to dot](../images/TemplePlot.png)
-
 
 ## Adding labels
 
@@ -57,6 +55,8 @@ ListPlot[
     Joined -> joined
 ]
 ```
+
+![First dot to dot](../images/TemplePlot.png)
 
 
 ## Creating a function
@@ -125,4 +125,4 @@ points = Drop[points, {16, 62}];
 
 Plot the points to verify it has worked:
 
-![Cleaned up dot to dot](../images/CleanedTemplePlot.png)
+![Cleaned up temple plot](../images/TemplePlotCleaned.png)
