@@ -1,14 +1,14 @@
 ## Adding labels
 
-You are now going to label each point in the plot by its position in the list of points.
+You are now going to label each point in the plot by its position in the `points` list.
 This will tell the person doing your dot-to-dot the order in which to connect the dots.
 
 Labelling a point can be done with `Callout`.
 
 --- task ---
 
-Use `Part` to extract the first point from `points`.
-Use `Callout` to label the point by its position in the list of points and plot the result.
+Use `Part` to extract the first point from the `points` list.
+Use `Callout` to label the point by its position and plot the result.
 
 ```
 ListPlot[
@@ -152,3 +152,5 @@ Plot the table of points.
 --- /task ---
 
 ![Labelled temple plot](images/TemplePlotLabelled.png)
+
+Congratulations! You have made your very own dot-to-dot.

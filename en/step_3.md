@@ -1,10 +1,10 @@
 ## Plotting the points
 
-You can plot your coordinates with `ListPlot`.
+You can plot your points with `ListPlot`.
 
 --- task ---
 
-Plot your coordinates.
+Plot your list of points.
 
 ```
 ListPlot[points]

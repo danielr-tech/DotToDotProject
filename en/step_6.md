@@ -1,4 +1,4 @@
-## Challenge: improve your function
+## Challenge: improve your dot-to-dot
 
 There are several improvements that can be made to your dot-to-dot.
 
