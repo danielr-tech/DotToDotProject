@@ -36,6 +36,8 @@ ListPlot[
 ]
 ```
 
+![Temple plot, dots](../images/TemplePlotNotJoined.png)
+
 
 ## Adding labels
 
@@ -56,7 +58,7 @@ ListPlot[
 ]
 ```
 
-![First dot to dot](../images/TemplePlot.png)
+![Labelled temple plot](../images/TemplePlotLabelled.png)
 
 
 ## Creating a function
