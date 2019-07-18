@@ -20,8 +20,7 @@ A raster graphic (also known as a bitmap image) is made up of a grid of fixed pi
 A vector graphic is made up of polygons defined by mathematical curves connecting points. If you zoom in on a vector graphic, it will retain its detail.
 
 ![Raster graphic VS vector graphic](images/RasterVSVector.png)
-Credit to [Darth Stabro, English Wikipedia](https://commons.wikimedia.org/w/index.php?curid=15789788).
-TODO: Need to reduce the image size. This applies to many other images in other projects, too.
+_Credit to [Darth Stabro, English Wikipedia](https://commons.wikimedia.org/w/index.php?curid=15789788)._
 
 --- /collapse ---
 
