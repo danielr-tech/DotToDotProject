@@ -11,5 +11,5 @@ steps:
   - title: Plotting the points
   - title: Adding labels
   - title: Creating a function
-  - title: "Challenge: improve your function"
+  - title: "Challenge: improve your dot-to-dot"
     challenge: true
